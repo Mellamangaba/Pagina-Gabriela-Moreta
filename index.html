@@ -4,63 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela Moreta | Engineering & Sales</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-   <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <h1>Gabriela Moreta Pinto</h1>
-        <p>Ingeniería en Sistemas | Sales & Customer Success</p>
-    </header>
-    
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Estudiante de Ingeniería con visión de negocios y experta en vincular soluciones técnicas con necesidades comerciales.</p>
-    </section>
-
-<div class="skills-container">
-    <span class="skill-chip">Java</span>
-    <span class="skill-chip">C++</span>
-    <span class="skill-chip">SQL (PostgreSQL)</span>
-    <span class="skill-chip">HTML/CSS</span>
-    <span class="skill-chip">Flutter</span>
-    <span class="skill-chip">Agile/Scrum</span>
-    <span class="skill-chip">Ciberseguridad</span>
-</div>
-
-<section id="projects">
-    <h2>Proyectos de Ingeniería</h2>
-    
-    <div class="project-card">
-        <h3>Sistema de Archivos Concurrente</h3>
-        <p>Desarrollo de un simulador virtual con gestión de permisos y acceso concurrente. Enfocado en la integridad de datos y seguridad.</p>
-        <a href="https://github.com/Mellamangaba/Simulador-Virtual-de-Sistema-de-Archivos-Concurrente-con-Gesti-n-de-Permisos">Ver código en GitHub</a>
-    </div>
-
-<div class="project-card">
-        <h3>Real-Time Task Scheduler (Java)</h3>
-        <p>Desarrollo de un planificador de tareas en tiempo real utilizando Java. Implementación de algoritmos de prioridad y gestión de procesos para garantizar el cumplimiento de tiempos de respuesta críticos.</p>
-        <a href="https://github.com/Mellamangaba/Real-Time-Scheduler-Java">Ver código en GitHub</a>
-    </div>
-</section>
-
- <section id="skills">
-        <h2>Habilidades Técnicas</h2>
-        <div class="skills-container">
-            <span class="skill-chip">Java</span>
-            <span class="skill-chip">C++</span>
-            <span class="skill-chip">SQL (PostgreSQL)</span>
-            <span class="skill-chip">HTML/CSS</span>
-            <span class="skill-chip">Flutter</span>
-            <span class="skill-chip">Agile/Scrum</span>
-            <span class="skill-chip">Ciberseguridad</span>
+        <div class="header-container">
+            <h1>Gabriela Moreta Pinto</h1>
+            <p class="subtitle">Ingeniería en Sistemas | Sales & Customer Success</p>
+            <p class="location"><i class="fa-solid fa-location-dot"></i> Caracas, Venezuela (Disponible para Remoto)</p>
+            <div class="header-buttons">
+                <a href="https://github.com/Mellamangaba" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="TU_LINK_DE_LINKEDIN_AQUÍ" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:Gmoreta@correo.unimet.edu.ve" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contactar</a>
+            </div>
         </div>
-    </section>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2><i class="fa-solid fa-user"></i> Sobre mí</h2>
+            <p>Estudiante de Ingeniería en Sistemas con una fuerte visión de negocios. Me especializo en vincular soluciones técnicas complejas con necesidades comerciales, facilitando la comunicación entre equipos de desarrollo y clientes finales para maximizar el éxito del cliente.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2><i class="fa-solid fa-code"></i> Proyectos Destacados</h2>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Sistema de Archivos Concurrente</h3>
+                    <p>Desarrollo de un simulador virtual con gestión de permisos y acceso concurrente. Enfocado en la integridad de datos, control de hilos y seguridad del sistema operativo.</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>Sistemas Operativos</span>
+                        <span>Concurrencia</span>
+                    </div>
+                    <a href="https://github.com/Mellamangaba/Simulador-Virtual-de-Sistema-de-Archivos-Concurrente-con-Gesti-n-de-Permisos" target="_blank" class="project-link">Ver código <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Real-Time Task Scheduler</h3>
+                    <p>Desarrollo de un planificador de tareas en tiempo real utilizando Java. Implementación de algoritmos de prioridad y gestión de procesos para garantizar el cumplimiento de tiempos de respuesta críticos.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Algoritmos</span>
+                        <span>Real-Time</span>
+                    </div>
+                    <a href="https://github.com/Mellamangaba/Real-Time-Scheduler-Java" target="_blank" class="project-link">Ver código <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card">
+            <h2><i class="fa-solid fa-brain"></i> Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-terminal"></i> Desarrollo</h3>
+                    <div class="skills-container">
+                        <span class="skill-chip">Java</span>
+                        <span class="skill-chip">C++</span>
+                        <span class="skill-chip">Flutter</span>
+                        <span class="skill-chip">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-database"></i> Datos y Seguridad</h3>
+                    <div class="skills-container">
+                        <span class="skill-chip">SQL (PostgreSQL)</span>
+                        <span class="skill-chip">Ciberseguridad</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-briefcase"></i> Negocios y Gestión</h3>
+                    <div class="skills-container">
+                        <span class="skill-chip">Agile/Scrum</span>
+                        <span class="skill-chip">Sales</span>
+                        <span class="skill-chip">Customer Success</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Conecta conmigo: <a href="mailto:Gmoreta@correo.unimet.edu.ve">Gmoreta@correo.unimet.edu.ve</a></p>
-        <p>Caracas, Venezuela - Disponible para trabajo remoto</p>
+        <p>&copy; 2026 Gabriela Moreta Pinto. Desarrollado con pasión.</p>
     </footer>
 
-    </body>
+</body>
 </html>

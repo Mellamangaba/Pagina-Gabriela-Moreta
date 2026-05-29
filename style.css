@@ -198,3 +198,98 @@ footer a {
     color: var(--primary-color);
     font-weight: bold;
 }
+/* Color personalizado para la nueva carpeta de Datos y Ciberseguridad */
+.folder-data { color: #e11d48; }
+
+/* El resto del código de grillas y carpetas se mantiene igual para renderizar la interfaz */
+.section-instruction {
+    font-size: 0.9em;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.cert-folder {
+    background: #ffffff;
+    border-left: 4px solid var(--primary-color);
+    padding: 10px 0 10px 15px;
+}
+
+.cert-folder h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.15em;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.folder-ibm { color: #0f62fe; }
+.folder-platzi { color: #00bf73; }
+.folder-global { color: #f59e0b; }
+
+.cert-folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.cert-link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: var(--transition);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cert-card:hover {
+    border-color: var(--accent-color);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+    transform: translateY(-2px);
+}
+
+.cert-icon {
+    font-size: 1.4em;
+    color: var(--accent-color);
+    background: rgba(37, 99, 235, 0.08);
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 38px;
+}
+
+.cert-info h4 {
+    margin: 0;
+    font-size: 0.95em;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.cert-issuer {
+    margin: 4px 0 0 0;
+    font-size: 0.8em;
+    color: var(--text-light);
+}

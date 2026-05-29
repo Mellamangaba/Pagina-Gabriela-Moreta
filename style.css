@@ -101,3 +101,63 @@ footer a {
     font-size: 0.85em;
     border: 1px solid #1a2a6c;
 }
+/* ==========================================================================
+   SECCIÓN DE CERTIFICACIONES
+   ========================================================================== */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.cert-card:hover {
+    border-color: var(--accent-color);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+    transform: translateY(-2px);
+}
+
+.cert-icon {
+    font-size: 1.8em;
+    color: var(--accent-color);
+    background: rgba(37, 99, 235, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+}
+
+.cert-info h3 {
+    margin: 0;
+    font-size: 1em;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.cert-issuer {
+    margin: 4px 0 2px 0;
+    font-size: 0.85em;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cert-date {
+    margin: 0;
+    font-size: 0.8em;
+    color: var(--text-light);
+}
